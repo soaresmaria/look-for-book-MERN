@@ -6,6 +6,7 @@ import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
+
 const client = new ApolloClient({
   request: (operation) => {
     const token = localStorage.getItem("id_token");
@@ -33,6 +34,7 @@ function App() {
       </>
     </Router>
   </ApolloProvider>
+ 
   );
 }
 
